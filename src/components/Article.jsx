@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ArticleData from './ArticleData';
-
 function Article(){
   return(
     <div>
@@ -10,7 +8,7 @@ function Article(){
         <h1>Seasonal Produce</h1>
         <hr/>
         <div className='flexItems'>
-          {articleData.map((produce, index) =>
+          {.map((produce, index) =>
             <SeasonalProduce
               month={produce.month}
               selection={produce.selection}
@@ -30,3 +28,5 @@ function Article(){
 
   );
 }
+
+export default Article;
