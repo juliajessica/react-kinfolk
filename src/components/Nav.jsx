@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+//images
 import hamburger from '../assets/img/hamburger.svg';
 import logo from '../assets/img/logo.png';
 import shoppingBag from '../assets/img/shopping.svg';
@@ -8,12 +11,12 @@ function Nav(){
   return(
     <div>
       <div className="flexNav">
-        <img src={hamburger} className="svgResize"/>
-        <img src={logo} className="logo" title="Kinfolk"/>
+        <img src={hamburger} className="svgResize" />
+        <img src={logo} className="logo" title="Kinfolk" />
         <div className="rightNav">
-          <img src={shoppingBag} className="svgResize"/>
-          <h5>SHOP</h5>
-          <img src={search} className="svgResize"/>
+          <img src={shoppingBag} className="svgResize" />
+          <h5><Link to="/shoppingList">SHOP</Link></h5>
+          <img src={search} className="svgResize" />
         </div>
       </div>
     <hr/>
@@ -41,7 +44,7 @@ function Nav(){
           }
           h5 {
             font-family: 'Encode Sans Condensed', sans-serif;
-            
+            cursor: pointer;
           }
           .rightNav{
             display:flex;
