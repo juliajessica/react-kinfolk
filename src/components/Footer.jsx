@@ -18,8 +18,8 @@ function Footer(){
           align-items: center;
           align-self: flex-end;
           font-size: 1.3rem;
-
         }
+
       `}</style>
     </div>
 

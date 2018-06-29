@@ -6,10 +6,15 @@ import hamburger from '../assets/img/hamburger.svg';
 import logo from '../assets/img/logo.png';
 import shoppingBag from '../assets/img/shopping.svg';
 import search from '../assets/img/search.svg';
+import banner from '../assets/img/banner1600.jpg';
+
 
 function Nav(){
   return(
     <div>
+      <img src={banner} title="kinfolk magazine 2018" style={{overflow: 'hidden'}}/>
+
+    // set this banner as a background image instead
       <div className="flexNav">
         <img src={hamburger} className="svgResize" />
         <img src={logo} className="logo" title="Kinfolk" />

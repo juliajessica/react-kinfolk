@@ -9,7 +9,7 @@ import Error404 from './Error404';
 
 function Router(){
   return(
-    <div>
+    <div className="body">
       <Switch>
         <Route exact path='/' component={ArticleList} />
         <Route path='/article' component={Article} />
@@ -20,7 +20,11 @@ function Router(){
 
 
       <style jsx>{`
-
+        .body {
+          margin-left:2rem;
+          margin-right: 2rem;
+          max-width: 1700px;
+        }
       `}</style>
     </div>
   );
