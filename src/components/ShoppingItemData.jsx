@@ -105,4 +105,4 @@ const shoppingItemData = [
   }
 ];
 
-export default articleData;
+export default shoppingItemData;

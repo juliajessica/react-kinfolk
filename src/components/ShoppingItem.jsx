@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import shoppingItemData from './ShoppingItemData';
-
 
 function ShoppingItem(){
   return(
     <div>
-      <div className="fullPage">
+      <div className="shopItemBody">
 
         <hr/>
         <div className='flexItems'>

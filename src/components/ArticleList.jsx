@@ -3,8 +3,7 @@ import Article from './Article';
 
 import articleData from './articleData';
 
-
-function ShoppingItem(){
+function ArticleList(){
   return(
     <div>
       <div className="ArticleListBody">
@@ -32,4 +31,4 @@ function ShoppingItem(){
   );
 }
 
-export default ShoppingItem;
+export default ArticleList;
