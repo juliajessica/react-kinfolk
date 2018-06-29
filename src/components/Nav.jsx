@@ -12,9 +12,7 @@ import banner from '../assets/img/banner1600.jpg';
 function Nav(){
   return(
     <div>
-      <img src={banner} title="kinfolk magazine 2018" style={{overflow: 'hidden'}}/>
-
-    // set this banner as a background image instead
+      <div className="bannerImg" title="kinfolk magazine 2018"></div>
       <div className="flexNav">
         <img src={hamburger} className="svgResize" />
         <img src={logo} className="logo" title="Kinfolk" />
@@ -51,9 +49,20 @@ function Nav(){
             flex-direction: row;
             justify-content: flex-end;
           }
+          .bannerImg {
+            width: 100%;
+            height: 300px;
+            background-image: url(${banner});
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin:0;
+          }
       `}</style>
     </div>
   );
 }
 
 export default Nav;
+
+// <img src={banner} title="kinfolk magazine 2018" style={{overflow: 'hidden'}}/>

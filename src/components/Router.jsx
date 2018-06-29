@@ -25,6 +25,7 @@ function Router(){
           margin-right: 2rem;
           max-width: 1700px;
         }
+        
       `}</style>
     </div>
   );

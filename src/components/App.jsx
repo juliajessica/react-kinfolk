@@ -9,6 +9,10 @@ function App(){
       <Nav />
       <Router />
       <Footer />
+
+
+        
+
     </div>
   );
 }

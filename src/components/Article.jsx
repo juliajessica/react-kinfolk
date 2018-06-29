@@ -36,6 +36,14 @@ function Article(props){
           color: #4D4D4D;
         }
 
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          margin: 0;
+        }
+
       `}</style>
     </div>
 
