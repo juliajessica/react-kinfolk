@@ -14,6 +14,7 @@ function App(){
         .body {
           margin-left:2rem;
           margin-right: 2rem;
+          max-width: 1700px;
         }
       `}</style>
     </div>

@@ -16,7 +16,6 @@ function ArticleList(){
           <p className="titleCurrentArticle">The New Democrats</p>
           <p style={{color: '#4D4D4D', fontSize:'.8rem'}}>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
-          <div className="divider"></div>
 
 
         </div>
@@ -37,6 +36,10 @@ function ArticleList(){
           display:flex;
           flex-direction:row;
           padding-top:2rem;
+          padding-bottom: 4rem;
+          border-bottom: 1px solid #4D4D4D;
+          border-color: #4D4D4;
+
         }
         .currentArticle {
           padding-right:2rem;
@@ -56,6 +59,8 @@ function ArticleList(){
           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
           font-size: .9rem;
           grid-gap: 1rem;
+          border-left: 1px solid #4D4D4D;
+          padding-left:1rem;
         }
 
         .underlineRed{
@@ -65,13 +70,9 @@ function ArticleList(){
           text-decoration-color: red;
           color: #4D4D4D;
         }
-        .divider{
-          position:absolute;
-          left:47%;
-          top:17%;
-          bottom:-180%;
-          border-left:1px solid #4D4D4D;
-        }
+
+
+
 
 
 
