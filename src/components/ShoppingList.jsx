@@ -32,31 +32,30 @@ function ShoppingList(){
         </div>
       </div>
       <style jsx>{`
-          @import url('https://fonts.googleapis.com/css?family=Lora');
+        @import url('https://fonts.googleapis.com/css?family=Lora');
 
-          .bannerShop {
-            padding: 2rem;
-            display: block;
-            margin: auto;
-            height: 250px;
-            width:auto;
-          }
-          .flexBanner {
-            display: flex;
-            flex-direction:row;
-            align-items: center;
-            text-align: center;
-          }
-          .bannerTitle {
-            font-family: 'Lora', serif;
-            font-size: 2rem;
-          }
-          .bannerCopy {
-            font-family: 'Lora', serif;
-            font-size: .8rem;
-            font-weight: lighter;
-          }
-
+        .bannerShop {
+          display: block;
+          height: auto;
+          width:100%;
+        }
+        .flexBanner {
+          align-items: center;
+          text-align: center;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 1rem;
+          padding:3rem;
+        }
+        .bannerTitle {
+          font-family: 'Lora', serif;
+          font-size: 2rem;
+        }
+        .bannerCopy {
+          font-family: 'Lora', serif;
+          font-size: .8rem;
+          font-weight: lighter;
+        }
         .flexShoppingList {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -68,6 +67,7 @@ function ShoppingList(){
           line-space: 1rem;
           letter-spacing: .2rem;
           text-align:center;
+          padding-top:3rem;
         }
         .underlineRed{
           text-decoration: underline;
