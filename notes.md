@@ -45,7 +45,7 @@
 
 ######  Angular project: https://github.com/juliajessica/nurture-funding
 
-*
+* I did not run into any issues while working on this independent project. I found that React is a fairly simple library to use. Linter always saves the day anytime you forget a semicolon but other then small little typos I did not have any issues building this application.
 
 #### Thoughts on the difference in development process in Angular and React
 
