@@ -7,7 +7,7 @@ function ShoppingList(){
   return(
     <div>
       <div className="shopListBody">
-
+        <h1>this is shopping list</h1>
         <hr/>
         <div className='flexShoppingList'>
           {shoppingItemData.map((item, index) =>

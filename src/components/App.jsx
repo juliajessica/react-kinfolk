@@ -6,12 +6,9 @@ import Footer from './Footer';
 function App(){
   return (
     <div>
-      <Header />
-      <Switch>
-        <Nav />
-        <Router />
-        <Footer />
-      </Switch>
+      <Nav />
+      <Router />
+      <Footer />
     </div>
   );
 }

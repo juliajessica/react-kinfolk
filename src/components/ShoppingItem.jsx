@@ -6,10 +6,10 @@ function ShoppingItem(props){
   return(
     <div>
       <div className="shopItemBody">
-
+        <h1>this is shopping item</h1>
         <hr/>
         <div className='flexShoppingItems'>
-          <img src {props.image}>
+          <img src={props.image} />
           <h2>{props.fullTitle}</h2>
           <p>{props.fullDetails}</p>
         </div>
