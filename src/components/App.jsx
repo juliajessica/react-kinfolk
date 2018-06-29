@@ -1,4 +1,6 @@
 import React from 'react';
+import Nav from './Nav';
+import Router from './Router';
 
 function App(){
   return (
@@ -6,7 +8,7 @@ function App(){
       <Header />
       <Switch>
         <Nav />
-        <Route exact path='/' component={} />
+        <Route />
         <Footer />
       </Switch>
     </div>

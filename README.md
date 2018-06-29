@@ -76,7 +76,6 @@ $ npm run start
 
 ## View my <a href="/notes.md" title="Julia Sheremet Github Projects">notes</a> for more details on my planning process for this application
 
-
 ### <span style="color:#74875d;">License</span>
 
 Copyright (c) 2018 ****_Julia Sheremet_****
