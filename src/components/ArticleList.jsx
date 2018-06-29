@@ -51,10 +51,11 @@ function ArticleList(){
 
         .flexArticleList {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-          gird-gap: 2rem;
-          grid-auto-flow: dense; 
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          font-size: .9rem;
+          grid-gap: 1rem;
         }
+
         .underlineRed{
           padding-top: .6rem;
           font-size:.6rem;

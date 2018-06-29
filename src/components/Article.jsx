@@ -6,18 +6,24 @@ function Article(props){
     <div>
       <div className="articleBody">
         <div className='flexArticleItems'>
-          <img src={props.image} className="articleImgResize"/>
-          <p>{props.title}</p>
-          <p>{props.description}</p>
+          <div className='singleArticle'>
+            <img src={props.image} className="articleImgResize"/>
+            <p>{props.title}</p>
+            <p>{props.description}</p>
+          </div>
         </div>
       </div>
       <style jsx>{`
-
         .flexArticleItems {
+          height: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          grid-gap: 1rem;
-          padding:1rem;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gird-gap: 2rem;
+          grid-auto-flow: dense;
+        }
+        .singleArticle{
+          align-self: center;
+          justify-self: center;
         }
         .articleImgResize {
           display:block;
