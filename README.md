@@ -74,6 +74,8 @@ $ npm run start
 * React Hot Loader
 * CSS Loader, CSS Style Loader, and JSX Loader
 
+## View my <a href="/notes.md" title="Julia Sheremet Github Projects">notes</a> for more details on my planning process for this application
+
 
 ### <span style="color:#74875d;">License</span>
 
