@@ -4,7 +4,8 @@ function Footer(){
   return(
     <div className="footer">
 
-      <p></p>
+      <p>©KINFOLK 2018</p>
+      <p>TERMS &amp; CONDITIONS</p>
 
       <style jsx>{`
         .footer{

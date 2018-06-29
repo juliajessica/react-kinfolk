@@ -2,12 +2,14 @@
 
 <h1><center>App</center></h1>
 
-## Nav
- * static on every page
- * banner image
- * logo
+## 1. Nav
+  * logo - goes back to homepage
+   * static on every page
+   * banner image
+   * logo
 
-## Router
+
+## 2. Router
 
   * article list
     * image
@@ -31,7 +33,7 @@
     * description
     * add to cart button
 
-## Footer
+## 3. Footer
   * social icons
   * images
   * subscribe input box
