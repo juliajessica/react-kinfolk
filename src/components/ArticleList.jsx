@@ -11,8 +11,8 @@ function ArticleList(){
     <div>
       <div className='articleListBody'>
         <div className="currentArticle">
-          <p className="underlineRed">ARTS & CULTURE, ISSUE 28</p>
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
+          <p className="underlineRed">ARTS & CULTURE, ISSUE 28</p>
           <p className="titleCurrentArticle">The New Democrats</p>
           <p>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
           <p>READ MORE</p>
@@ -31,12 +31,17 @@ function ArticleList(){
         </div>
       </div>
       <style jsx>{`
-          .articleListBody {
-            display:flex;
-            flex-direction:row;
-          }
+
+        .articleListBody {
+          display:flex;
+          flex-direction:row;
+        }
+        .currentArticle {
+          padding:1rem;
+          text-align: center;
+        }
         .titleCurrentArticle{
-          font-size: 3rem;
+          font-size: 2rem;
         }
         .currentArticleImg{
           display: block;
@@ -48,9 +53,11 @@ function ArticleList(){
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
           gird-gap: 2rem;
+          grid-auto-flow: dense; 
         }
         .underlineRed{
-          font-size:.4rem;
+          padding-top: .6rem;
+          font-size:.6rem;
           text-decoration: underline;
           text-decoration-color: red;
         }

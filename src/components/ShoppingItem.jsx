@@ -7,17 +7,26 @@ function ShoppingItem(props){
     <div>
       <div className="shopItemBody">
         <div className='flexShoppingItems'>
-          <img src={props.image} className="resizeItemImg"/>
-          <p className="shoppingTag">{props.tag}</p>
-          <p>{props.title}</p>
-          <p>{props.price}</p>
+          <div className="singleShoppingItem">
+            <img src={props.image} className="resizeItemImg"/>
+            <p className="shoppingTag">{props.tag}</p>
+            <p>{props.title}</p>
+            <p style={{paddingBottom: '.6rem'}}>{props.price}</p>
+          </div>
         </div>
       </div>
       <style jsx>{`
 
         .flexShoppingItems {
+          height: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-auto-flow: dense;
+
+        }
+        .singleShoppingItem{
+          align-self: center;
+          justify-self: center;
         }
 
         .flexShoppingItems p {
@@ -26,7 +35,9 @@ function ShoppingItem(props){
         }
 
         .shoppingTag {
-          font-size:.4rem;
+          padding-top:.4rem;
+          padding-bottom: .4rem;
+          font-size:.6rem;
           text-decoration: underline;
           text-decoration-color: red;
         }
