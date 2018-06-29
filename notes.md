@@ -14,8 +14,6 @@
     * title
     * image
     * description
-    
-
 
 
 ## Footer

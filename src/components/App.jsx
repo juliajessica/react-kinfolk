@@ -5,7 +5,9 @@ function App(){
     <div>
       <Header />
       <Switch>
+        <Nav />
         <Route exact path='/' component={} />
+        <Footer />
       </Switch>
     </div>
   );
