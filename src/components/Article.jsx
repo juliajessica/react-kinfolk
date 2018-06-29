@@ -25,6 +25,7 @@ function Article(props){
           align-self: center;
           justify-self: center;
         }
+
         .articleImgResize {
           display:block;
           width: 100%;

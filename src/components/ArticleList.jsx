@@ -72,10 +72,6 @@ function ArticleList(){
         }
 
 
-
-
-
-
       `}</style>
     </div>
 
