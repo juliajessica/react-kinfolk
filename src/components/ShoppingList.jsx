@@ -2,7 +2,7 @@ import React from 'react';
 import ShoppingItem from './ShoppingItem';
 import shoppingItemData from './ShoppingItemData';
 //images
-import bannerShop from '../assets/img/bannerShop.jpg'
+import bannerShop from '../assets/img/bannerShop.jpg';
 
 function ShoppingList(){
   return(
@@ -13,9 +13,9 @@ function ShoppingList(){
           <img src={bannerShop} className="bannerShop"/>
 
           <p>
-          <p className="underlineRed" style={{fontSize:'.5rem'}}>ARTWORK</p>
-          <p className="bannerTitle">The Kinfolk Artwork Series</p>
-          <p className="bannerCopy">An exciting extension of <em>Kinfolk</em>’s ethos of fostering community and celebrating the many talents of our collaborators, <em>The Kinfolk Artwork Series</em> consists of three limited edition prints selected by the <em>Kinfolk</em> team.</p>
+            <p className="underlineRed" style={{fontSize:'.5rem'}}>ARTWORK</p>
+            <p className="bannerTitle">The Kinfolk Artwork Series</p>
+            <p className="bannerCopy">An exciting extension of <em>Kinfolk</em>’s ethos of fostering community and celebrating the many talents of our collaborators, <em>The Kinfolk Artwork Series</em> consists of three limited edition prints selected by the <em>Kinfolk</em> team.</p>
           </p>
         </div>
         <div className='flexShoppingList'>

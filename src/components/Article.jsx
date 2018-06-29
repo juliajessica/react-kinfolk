@@ -7,7 +7,9 @@ function Article(props){
       <div className="articleBody">
         <hr/>
         <div className='flexArticleItems'>
-
+          <img src={props.image} />
+          <p>{props.title}</p>
+          <p>{props.description}</p>
         </div>
       </div>
       <style jsx>{`

@@ -7,8 +7,6 @@ function ArticleList(){
   return(
     <div>
       <div className='ArticleListBody'>
-        <h1>this is article list</h1>
-        <hr/>
         <div className='flexArticleList'>
           {articleData.map((article, index) =>
             <Article
