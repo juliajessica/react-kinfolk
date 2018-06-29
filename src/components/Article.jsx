@@ -5,9 +5,8 @@ function Article(props){
   return(
     <div>
       <div className="articleBody">
-        <hr/>
         <div className='flexArticleItems'>
-          <img src={props.image} />
+          <img src={props.image} className="articleImgResize"/>
           <p>{props.title}</p>
           <p>{props.description}</p>
         </div>
@@ -16,7 +15,15 @@ function Article(props){
 
         .flexArticleItems {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 1rem;
+          padding:1rem;
+        }
+        .articleImgResize {
+          display:block;
+          width: 100%;
+          height:auto;
+          margin:auto;
         }
 
       `}</style>
@@ -28,7 +35,7 @@ function Article(props){
 Article.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   fullDescription: PropTypes.string.isRequired
 };
 
