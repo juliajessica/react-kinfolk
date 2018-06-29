@@ -1,7 +1,7 @@
 import React from 'react';
-// import Article from './Article';
+import Article from './Article';
 
-// import articleData from './articleData';
+import articleData from './articleData';
 
 function ArticleList(){
   return(
@@ -10,7 +10,14 @@ function ArticleList(){
         <h1>this is article list</h1>
         <hr/>
         <div className='flexArticleList'>
-
+          {articleData.map((article, index) =>
+            <Article
+              title={article.title}
+              decription={article.description}
+              image={article.image}
+              fullDescription={article.fullDescription}
+              key={index} />
+          )}
         </div>
       </div>
       <style jsx>{`
@@ -27,10 +34,3 @@ function ArticleList(){
 }
 
 export default ArticleList;
-
-// {articleData.map((item, index) =>
-//   // <SeasonalProduce
-//   //   month={produce.month}
-//   //   selection={produce.selection}
-//   //   key={index}/>
-// )}
