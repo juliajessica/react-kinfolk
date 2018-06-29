@@ -49,4 +49,4 @@
 
 #### Thoughts on the difference in development process in Angular and React
 
-*
+* The development processes seems easier to me in React than in  Angular. It could also be because Angular was the first time we were introduced to larger applications and learning how to move data up/down. I enjoy using props and routing in one component. Its feels more organized to me having all of my functionality spread out into smaller functions.  
