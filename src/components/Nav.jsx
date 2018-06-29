@@ -16,11 +16,11 @@ function Nav(){
         <div className="rightNav">
           <img src={shoppingBag} className="svgResize" />
           <h5><Link to="/shoppingList" style={{fontFamily: 'Nanum Gothic, sans-serif',
-            cursor: 'pointer', color: 'black', textDecoration: 'none'}}>SHOP</Link></h5>
+            cursor: 'pointer', color: '#4D4D4D', fontWeight: 'lighter', textDecoration: 'none'}}>SHOP</Link></h5>
           <img src={search} className="svgResize" />
         </div>
       </div>
-      <hr/>
+      <hr style={{color: '#4D4D4D'}}/>
 
 
       <style jsx>{`

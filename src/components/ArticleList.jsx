@@ -14,8 +14,9 @@ function ArticleList(){
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
           <p className="underlineRed">ARTS & CULTURE, ISSUE 28</p>
           <p className="titleCurrentArticle">The New Democrats</p>
-          <p>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
-          <p>READ MORE</p>
+          <p style={{color: '#4D4D4D', fontSize:'.8rem'}}>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
+          <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
+          <div className="divider"></div>
 
 
         </div>
@@ -23,7 +24,7 @@ function ArticleList(){
           {articleData.map((article, index) =>
             <Article
               title={article.title}
-              decription={article.description}
+              description={article.description}
               image={article.image}
               fullDescription={article.fullDescription}
               key={index} />
@@ -35,9 +36,10 @@ function ArticleList(){
         .articleListBody {
           display:flex;
           flex-direction:row;
+          padding-top:2rem;
         }
         .currentArticle {
-          padding:1rem;
+          padding-right:2rem;
           text-align: center;
         }
         .titleCurrentArticle{
@@ -61,6 +63,14 @@ function ArticleList(){
           font-size:.6rem;
           text-decoration: underline;
           text-decoration-color: red;
+          color: #4D4D4D;
+        }
+        .divider{
+          position:absolute;
+          left:47%;
+          top:17%;
+          bottom:-180%;
+          border-left:1px solid #4D4D4D;
         }
 
 

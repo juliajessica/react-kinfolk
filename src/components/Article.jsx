@@ -9,7 +9,7 @@ function Article(props){
           <div className='singleArticle'>
             <img src={props.image} className="articleImgResize"/>
             <p>{props.title}</p>
-            <p>{props.description}</p>
+            <p className="CopyLighterColor">{props.description}</p>
           </div>
         </div>
       </div>
@@ -30,6 +30,9 @@ function Article(props){
           width: 100%;
           height:auto;
           margin:auto;
+        }
+        .CopyLighterColor {
+          color: #4D4D4D;
         }
 
       `}</style>
