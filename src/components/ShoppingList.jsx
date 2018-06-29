@@ -3,7 +3,6 @@ import ShoppingItem from './ShoppingItem';
 
 import shoppingItemData from './ShoppingItemData';
 
-
 function ShoppingList(){
   return(
     <div>

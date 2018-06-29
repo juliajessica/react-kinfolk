@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Article(){
+function Article(props){
   return(
     <div>
-      <div className="seasonalProduceList">
-        <h1>Seasonal Produce</h1>
+      <div className="articleBody">
         <hr/>
         <div className='flexItems'>
-          {.map((produce, index) =>
-            <SeasonalProduce
-              month={produce.month}
-              selection={produce.selection}
-              key={index}/>
-          )}
+
         </div>
       </div>
       <style jsx>{`

@@ -8,7 +8,7 @@ function App(){
       <Header />
       <Switch>
         <Nav />
-        <Route />
+        <Router />
         <Footer />
       </Switch>
     </div>
