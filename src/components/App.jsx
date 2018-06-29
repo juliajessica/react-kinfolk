@@ -5,10 +5,17 @@ import Footer from './Footer';
 
 function App(){
   return (
-    <div>
+    <div className="body">
       <Nav />
       <Router />
       <Footer />
+
+      <style jsx>{`
+        .body {
+          margin-left:2rem;
+          margin-right: 2rem;
+        }
+      `}</style>
     </div>
   );
 }

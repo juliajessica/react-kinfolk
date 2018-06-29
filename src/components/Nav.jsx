@@ -6,20 +6,29 @@ import search from '../assets/img/search.svg';
 
 function Nav(){
   return(
-    <div className="flexNav">
-      <img src={hamburger} className="svgResize"/>
-      <img src={logo} className="logo" title="Kinfolk"/>
-      <img src={shoppingBag} className="svgResize"/>
-      <h5>SHOP</h5>
-      <img src={search} className="svgResize"/>
+    <div>
+      <div className="flexNav">
+        <img src={hamburger} className="svgResize"/>
+        <img src={logo} className="logo" title="Kinfolk"/>
+        <div className="rightNav">
+          <img src={shoppingBag} className="svgResize"/>
+          <h5>SHOP</h5>
+          <img src={search} className="svgResize"/>
+        </div>
+      </div>
+    <hr/>
 
 
       <style jsx>{`
+          @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+
+
+
           .flexNav {
             display:flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top:1rem;
+            padding-bottom: -1rem;
           }
           .logo {
             max-height:50px;
@@ -28,6 +37,16 @@ function Nav(){
           .svgResize {
             max-height:20px;
             width: auto;
+            padding:1rem;
+          }
+          h5 {
+            font-family: 'Encode Sans Condensed', sans-serif;
+            
+          }
+          .rightNav{
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
           }
       `}</style>
     </div>
