@@ -7,7 +7,7 @@ function ShoppingItem(props){
     <div>
       <div className="shopItemBody">
         <div className='flexShoppingItems'>
-          <div className="singleShoppingItem">
+          <div className="singleShoppingItem imgoverlay">
             <img src={props.image} className="resizeItemImg"/>
             <p className="shoppingTag">{props.tag}</p>
             <p>{props.title}</p>
@@ -46,36 +46,21 @@ function ShoppingItem(props){
           height: 200px;
           width:auto;
         }
+
         .resizeItemImg:after{
           transition: background-color 1s;
         }
         .resizeItemImg:hover{
+          opacity: .3;
           cursor:pointer;
+          position: relative;
+          overflow: hidden;
+          display: block;
+          max-width: 100%;
+          text-align: center;
+        }
 
-      position: relative;
-      overflow: hidden;
-      display: block;
-      max-width: 100%;
-      text-align: center;
-                }
 
-  .resizeItemImg:after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    z-index: 1;
-    -webkit-transition: 0.4s ease;
-    -moz-transition: 0.4s ease;
-    -ms-transition: 0.4s ease;
-    -o-transition: 0.4s ease;
-    transition: 0.4s ease;
-    opacity: 0;
-
-  }
 
 
       `}</style>
