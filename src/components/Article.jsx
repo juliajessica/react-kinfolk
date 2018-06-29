@@ -6,13 +6,13 @@ function Article(props){
     <div>
       <div className="articleBody">
         <hr/>
-        <div className='flexItems'>
+        <div className='flexArticleItems'>
 
         </div>
       </div>
       <style jsx>{`
 
-        .flexItems {
+        .flexArticleItems {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }

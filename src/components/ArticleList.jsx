@@ -9,7 +9,7 @@ function ArticleList(){
       <div className="ArticleListBody">
 
         <hr/>
-        <div className='flexItems'>
+        <div className='flexArticleList'>
           {articleData.map((item, index) =>
             // <SeasonalProduce
             //   month={produce.month}
@@ -20,7 +20,7 @@ function ArticleList(){
       </div>
       <style jsx>{`
 
-        .flexItems {
+        .flexArticleList {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }

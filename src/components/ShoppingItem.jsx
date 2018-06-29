@@ -8,13 +8,13 @@ function ShoppingItem(){
       <div className="shopItemBody">
 
         <hr/>
-        <div className='flexItems'>
+        <div className='flexShoppingItems'>
 
         </div>
       </div>
       <style jsx>{`
 
-        .flexItems {
+        .flexShoppingItems {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }

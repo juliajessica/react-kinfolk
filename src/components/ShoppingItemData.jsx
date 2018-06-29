@@ -1,14 +1,6 @@
 const shoppingItemData = [
   {
     image: "assets/img/img1.jpg",
-    tag: "ARTS & CULTURE",
-    title: "ISSUE 28",
-    price: "$18",
-    fullTitle: "The New Democrats",
-    fullDetails: ""
-    },
-  {
-    image: "assets/img/img1.jpg",
     tag: "MAGAZINE",
     title: "Issue 27",
     price: "$18",
