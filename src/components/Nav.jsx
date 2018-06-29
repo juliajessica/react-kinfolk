@@ -15,7 +15,8 @@ function Nav(){
         <img src={logo} className="logo" title="Kinfolk" />
         <div className="rightNav">
           <img src={shoppingBag} className="svgResize" />
-          <h5><Link to="/shoppingList">SHOP</Link></h5>
+          <h5><Link to="/shoppingList" style={{fontFamily: 'Nanum Gothic, sans-serif',
+          cursor: 'pointer', color: 'black', textDecoration: 'none'}}>SHOP</Link></h5>
           <img src={search} className="svgResize" />
         </div>
       </div>
@@ -23,9 +24,7 @@ function Nav(){
 
 
       <style jsx>{`
-          @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
-
-
+          @import @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
           .flexNav {
             display:flex;
@@ -41,10 +40,6 @@ function Nav(){
             max-height:20px;
             width: auto;
             padding:1rem;
-          }
-          h5 {
-            font-family: 'Encode Sans Condensed', sans-serif;
-            cursor: pointer;
           }
           .rightNav{
             display:flex;
