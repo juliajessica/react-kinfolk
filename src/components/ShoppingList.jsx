@@ -11,10 +11,14 @@ function ShoppingList(){
         <hr/>
         <div className='flexShoppingList'>
           {shoppingItemData.map((item, index) =>
-            // <SeasonalProduce
-            //   month={produce.month}
-            //   selection={produce.selection}
-            //   key={index}/>
+            <ShoppingItem
+              image={item.image}
+              tag={item.tag}
+              title={item.title}
+              price={item.price}
+              fullTitle={item.fullTitle}
+              fullDetails={item.fullDetails}
+              key={index}/>
           )}
         </div>
       </div>

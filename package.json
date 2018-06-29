@@ -1,5 +1,5 @@
 {
-  "name": "react-help-queue-example",
+  "name": "kinfolk-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,22 +10,14 @@
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/epicodus-lessons/react-help-queue-example.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/epicodus-lessons/react-help-queue-example/issues"
-  },
-  "homepage": "https://github.com/epicodus-lessons/react-help-queue-example#readme",
   "dependencies": {
+    "file-loader": "^1.1.6",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0",
     "styled-jsx": "^2.2.7",
+    "url-loader": "^0.6.2",
     "webpack-css-loaders": "^1.0.0"
   },
   "devDependencies": {
