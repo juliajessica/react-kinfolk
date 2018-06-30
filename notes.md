@@ -38,6 +38,8 @@
   * images
   * subscribe input box
 
+## 4. 404 Error  
+
 
 # Notes:
 
