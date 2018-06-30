@@ -1,4 +1,4 @@
-# _<p align="center"></p>_
+# _<p align="center">Kinfolk Clone</p>_
 
 #### _**<p align="center">By: Julia Sheremet</p>**_
 
@@ -9,9 +9,11 @@
 
 ## <span style="color:#74875d;">Description</span>
 
-### Link to live application:
+_I previously made a clone of Kinfolk in <a href="√" title="Julia Sheremet Web Designs">Angular</a> and this time around I cloned their website using the React/Redux libraries._
 
-_This is a template repository with the added technologies to build a React Application quicker for projects_
+### Link to live application:
+https://
+
 
 ### Setup/Installation Requirement
 Clone repository on your local computer.

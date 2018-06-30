@@ -1,4 +1,4 @@
-# Wolf and Moon planning
+# Kinfolk Clone in React
 
 <h1><center>App</center></h1>
 
@@ -46,6 +46,8 @@
 ######  Angular project: https://github.com/juliajessica/nurture-funding
 
 * I did not run into any issues while working on this independent project. I found that React is a fairly simple library to use. Linter always saves the day anytime you forget a semicolon but other then small little typos I did not have any issues building this application.
+
+* Oh, I lied -- I'm not sure how to get SVG's to work using React! If you have any insight please do share.
 
 #### Thoughts on the difference in development process in Angular and React
 
