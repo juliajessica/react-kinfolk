@@ -2,11 +2,12 @@ import React from 'react';
 import Article from './Article';
 
 import articleData from './articleData';
+import PropTypes from 'prop-types';
 
 //images
 import art1 from '../assets/img/art1.jpg';
 
-function ArticleList(){
+function ArticleList(props){
   return(
     <div>
       <div className='articleListBody'>
@@ -19,7 +20,7 @@ function ArticleList(){
 
 
         </div>
-        <div className='flexArticleList'>
+        <div className='flexArticleList' onClick={props.viewClickedArticle}>
           {articleData.map((article, index) =>
             <Article
               title={article.title}
@@ -29,6 +30,7 @@ function ArticleList(){
               key={index} />
           )}
         </div>
+        <Route path='/article' component={Article} />
       </div>
       <style jsx>{`
 
