@@ -3,22 +3,33 @@ import Nav from './Nav';
 import Router from './Router';
 import Footer from './Footer';
 
-function App(){
-  return (
-    <div>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <Nav />
-      <Router />
-      <Footer />
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state {
+      selectedArticle: null
+      // changeAdminRoute: {}
+    }
+  }
+
+  render(){
+    return (
+      <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Nav />
+        <Router onClick={this.handleClickArticle}/>
+        <Footer />
 
 
-    <style jsx>{`
+      <style jsx>{`
 
-        `}
-    </ style>
+          `}
+      </ style>
 
-    </div>
-  );
+      </div>
+    );
+  }
+
 }
 
 export default App;
