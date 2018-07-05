@@ -25,6 +25,7 @@ class Router extends React.Component {
 
   handleSingleArticle(selectedArticle){
     let newShoppingItemData = this.state.shoppingItemData.slice();
+    if ()
     this.setState({diplayArticle: selectedArticle});
     console.log(this.state);
   }
@@ -37,6 +38,7 @@ class Router extends React.Component {
             <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
           <Route path='/shoppinglist' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
+          <Route path='/admin' render={()=>Admin shoppingList={this.state.shoppingItemData} /> }/>
           <Route component={Error404} />
         </Switch>
 

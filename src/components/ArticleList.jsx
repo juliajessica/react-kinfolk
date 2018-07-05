@@ -20,7 +20,7 @@ function ArticleList(props){
 
 
         </div>
-        <div className='flexArticleList' onClick={props.viewClickedArticle}>
+        <div className='flexArticleList' onClick={props.singleArticle}>
           {articleData.map((article, index) =>
             <Article
               title={article.title}
@@ -76,8 +76,11 @@ function ArticleList(props){
 
       `}</style>
     </div>
-
   );
 }
+
+ArticleList.propTypes = {
+  onSingleArticle: PropTypes.func.isRequired
+};
 
 export default ArticleList;
