@@ -12,10 +12,10 @@ import banner from '../assets/img/banner1600.jpg';
 function Nav(){
   return(
     <div>
-      <div className="bannerImg" title="kinfolk magazine 2018"></div>
+      <Link to='/'><div className="bannerImg" title="kinfolk magazine 2018"></div></Link>
       <div className="flexNav">
         <img src={hamburger} className="svgResize" />
-        <img src={logo} className="logo" title="Kinfolk" />
+        <Link to='/'><img src={logo} className="logo" title="Kinfolk" /></Link>
         <div className="rightNav">
           <img src={shoppingBag} className="svgResize" />
           <h5><Link to="/shoppingList" style={{fontFamily: 'Nanum Gothic, sans-serif',
