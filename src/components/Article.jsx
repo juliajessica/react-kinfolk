@@ -51,10 +51,10 @@ function Article(props){
 }
 
 Article.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  image: PropTypes.string,
   description: PropTypes.string,
-  fullDescription: PropTypes.string.isRequired
+  fullDescription: PropTypes.string
 };
 
 export default Article;

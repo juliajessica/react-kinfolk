@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import ArticleList from './ArticleList';
-import Article from './Article';
+// import Article from './Article';
 import ShoppingList from './ShoppingList';
 import ShoppingItem from './ShoppingItem';
 import Error404 from './Error404';
@@ -18,27 +18,27 @@ class Router extends React.Component {
       shoppingItemData
       // changeAdminRoute: {}
     };
-    this.handleSingleArticle = this.handleSingleArticle.bind(this);
-    console.log(shoppingItemData);
-    console.log(this.state.handleSingleArticle);
+    // this.handleSingleArticle = this.handleSingleArticle.bind(this);
+    // console.log(shoppingItemData);
+    // console.log(this.state.handleSingleArticle);
   }
+  //
+  // handleSingleArticle(selectedArticle){
+  //   let newShoppingItemData = this.state.shoppingItemData.slice();
+  //   this.setState({newShoppingItemData: selectedArticle});
+  //   console.log(this.state);
+  // }
 
-  handleSingleArticle(selectedArticle){
-    let newShoppingItemData = this.state.shoppingItemData.slice();
-    if ()
-    this.setState({diplayArticle: selectedArticle});
-    console.log(this.state);
-  }
-
+  // <Route exact path='/' render={()=>
+  //   <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
   render(){
     return(
       <div className="body">
         <Switch>
-          <Route exact path='/' render={()=>
-            <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
-          <Route path='/shoppinglist' component={ShoppingList} />
+          <Route exact path='/' component={ArticleList} />
+          <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
-          <Route path='/admin' render={()=>Admin shoppingList={this.state.shoppingItemData} /> }/>
+          <Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>
           <Route component={Error404} />
         </Switch>
 

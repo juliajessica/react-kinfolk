@@ -20,7 +20,7 @@ function ArticleList(props){
 
 
         </div>
-        <div className='flexArticleList' onClick={props.singleArticle}>
+        <div className='flexArticleList' onClick={props.onSingleArticle}>
           {articleData.map((article, index) =>
             <Article
               title={article.title}
@@ -30,7 +30,7 @@ function ArticleList(props){
               key={index} />
           )}
         </div>
-        <Route path='/article' component={Article} />
+        <Article/ >
       </div>
       <style jsx>{`
 
@@ -80,7 +80,7 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  onSingleArticle: PropTypes.func.isRequired
+  onSingleArticle: PropTypes.func
 };
 
 export default ArticleList;

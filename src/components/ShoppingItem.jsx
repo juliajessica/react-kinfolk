@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 function ShoppingItem(props){
   return(
     <div>
@@ -70,12 +69,12 @@ function ShoppingItem(props){
 }
 
 ShoppingItem.propTypes = {
-  image: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  fullTitle: PropTypes.string.isRequired,
-  fullDetails: PropTypes.string.isRequired
+  image: PropTypes.string,
+  tag: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.string,
+  fullTitle: PropTypes.string,
+  fullDetails: PropTypes.string
 };
 
 export default ShoppingItem;

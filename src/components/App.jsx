@@ -8,7 +8,6 @@ function App(){
     <div>
       <Nav />
       <Router />
-      <Admin />
       <Footer />
     </div>
   );
