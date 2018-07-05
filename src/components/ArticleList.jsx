@@ -8,6 +8,8 @@ import PropTypes from 'prop-types';
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
+  let selectedArticle = null;
+
   return(
     <div>
       <div className='articleListBody'>
@@ -30,7 +32,6 @@ function ArticleList(props){
               key={index} />
           )}
         </div>
-        // <Article/ >
       </div>
       <style jsx>{`
 
