@@ -30,7 +30,7 @@ function ArticleList(props){
               key={index} />
           )}
         </div>
-        <Article/ >
+        // <Article/ >
       </div>
       <style jsx>{`
 

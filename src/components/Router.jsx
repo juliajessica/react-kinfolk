@@ -23,19 +23,22 @@ class Router extends React.Component {
     // console.log(this.state.handleSingleArticle);
   }
   //
-  // handleSingleArticle(selectedArticle){
-  //   let newShoppingItemData = this.state.shoppingItemData.slice();
-  //   this.setState({newShoppingItemData: selectedArticle});
-  //   console.log(this.state);
-  // }
+  handleSingleArticle(selectedArticle){
+    let newShoppingItemData = this.state.shoppingItemData.slice();
+    this.setState({newShoppingItemData: selectedArticle});
+    console.log(this.state);
+  }
 
-  // <Route exact path='/' render={()=>
+  // <Route exact path='/' component={ArticleList} />
+  //<Route exact path='/' render={()=>
   //   <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
   render(){
     return(
       <div className="body">
         <Switch>
-          <Route exact path='/' component={ArticleList} />
+
+          <Route exact path='/' render={()=>
+            <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>
