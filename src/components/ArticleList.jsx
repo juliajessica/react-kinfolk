@@ -32,14 +32,15 @@ function ArticleList(props){
           <p style={{color: '#4D4D4D', fontSize:'.8rem'}}>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
 
-          <div className='flexArticleList' onClick={props.onSingleArticle}>
+          <div className='flexArticleList'>
             {props.liftedShoppingData.map((article, index) =>
               <Article
                 title={article.title}
                 description={article.description}
                 image={article.image}
                 fullDescription={article.fullDescription}
-                key={index} />
+                key={index}
+                onSingleArticle={article.onSingleArticle} />
             )}
           </div>
         </div>

@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   return(
-    <div>
+    <div onClick={()=> {
+        props.onSingleArticle(title: props.title,
+                              image: props.image,
+                              fullDescription: props.fullDescription)}}>
       <h1>clicked</h1>
       <div className="articleBody">
         <div className='flexArticleItems'>
@@ -55,7 +58,7 @@ Article.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string,
   fullDescription: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  onSingleArticle: PropTypes.func
 };
 
 export default Article;

@@ -25,11 +25,8 @@ class Router extends React.Component {
   }
 
   handleSingleArticle(selectedArticle){
-    let newArticleListData = this.state.articleListData.slice();
-    console.log(newArticleListData);
-    newShoppingItemData.push(selectedArticle);
-    this.setState({articleListData: newArticleListData});
-    console.log(articleListData);
+    this.setState({viewSelectedArticle: newArticleListData});
+    alert(this.state.viewSelectedArticle.title);
   }
 
   // <Route exact path='/' component={ArticleList} />
