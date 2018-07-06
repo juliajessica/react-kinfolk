@@ -18,7 +18,7 @@ class Router extends React.Component {
       shoppingItemData,
       viewSelectedArticle: false
     };
-    // this.handleSingleArticle = this.handleSingleArticle.bind(this);
+    this.handleSingleArticle = this.handleSingleArticle.bind(this);
     // console.log(shoppingItemData);
     // console.log(this.state.handleSingleArticle);
   }
@@ -29,7 +29,6 @@ class Router extends React.Component {
     newShoppingItemData.push(selectedArticle);
     this.setState({shoppingItemData: newShoppingItemData});
     console.log(shoppingItemData);
-
   }
 
   // <Route exact path='/' component={ArticleList} />
@@ -61,3 +60,10 @@ class Router extends React.Component {
 }
 
 export default Router;
+
+
+// let newShoppingItemData = this.state.shoppingItemData.slice();
+// for (let i=0; i <= newShoppingItemData.length; i++){
+//   <Article newShoppingItemData[i] />
+// }
+//
