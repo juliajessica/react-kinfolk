@@ -4,6 +4,7 @@ import Article from './Article';
 import articleData from './articleData';
 import PropTypes from 'prop-types';
 
+
 //images
 import art1 from '../assets/img/art1.jpg';
 
@@ -97,6 +98,3 @@ ArticleList.propTypes = {
 };
 
 export default ArticleList;
-//  currentRouterPath: PropTypes.string
-
-// currentRouterPath={props.currentRouterPath}

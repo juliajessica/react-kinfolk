@@ -28,7 +28,7 @@ class Router extends React.Component {
     console.log(newShoppingItemData);
     newShoppingItemData.push(selectedArticle);
     this.setState({shoppingItemData: newShoppingItemData});
-    console.log(shoppingItemData);    
+    console.log(shoppingItemData);
   }
 
   // <Route exact path='/' component={ArticleList} />
@@ -39,7 +39,7 @@ class Router extends React.Component {
       <div className="body">
         <Switch>
           <Route exact path='/' render={(props)=>
-            <ArticleList liftedShoppingData={this.state.shoppingItemData} currentRouterPath={props.location.pathname} />} />//lifted state
+            <ArticleList liftedShoppingData={this.state.shoppingItemData} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>
