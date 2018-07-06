@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Article(props){
+  //{props.onSingleArticle({title: props.title, image: props.image, fullDescription: props.fullDescription});}}>
   return(
-    <div onClick={() => {props.onSingleArticle({title: props.title,
-      image: props.image,
-      fullDescription: props.fullDescription});}}>
+    <div onClick={() =>
       <h1>clicked</h1>
       <div className="articleBody">
         <div className='flexArticleItems'>

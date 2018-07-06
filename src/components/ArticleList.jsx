@@ -13,6 +13,7 @@ function ArticleList(props){
   }
   return(
     <div>
+      {viewArticle}
       <div className='articleListBody'>
         <div className="currentArticle">
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
@@ -83,8 +84,8 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  liftedShoppingData: PropTypes.array.isRequired,
-  onSingleArticle: PropTypes.func.isRequired,
+  liftedShoppingData: PropTypes.array,
+  onSingleArticle: PropTypes.func,
   viewSelectedArticle: PropTypes.string
 };
 
