@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   return(
-    <div onClick={()=> {
-        props.onSingleArticle(title: props.title,
-                              image: props.image,
-                              fullDescription: props.fullDescription)}}>
+    <div> onClick={()=> {
+      props.onSingleArticle({title: props.title,
+        image: props.image,
+        fullDescription: props.fullDescription});}}>
       <h1>clicked</h1>
       <div className="articleBody">
-        <div className='flexArticleItems'>
+      <div className='flexArticleItems'>
           <div className='singleArticle'>
-            <img src={props.image} className="articleImgResize"/>
-            <p>{props.title}</p>
-            <p className="CopyLighterColor">{props.description}</p>
-          </div>
+          <img src={props.image} className="articleImgResize"/>
+          <p>{props.title}</p>
+          <p className="CopyLighterColor">{props.description}</p>
         </div>
-      </div>
+        </div>
+    </div>
       <style jsx>{`
         .flexArticleItems {
           height: 100%;
