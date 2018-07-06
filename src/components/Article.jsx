@@ -3,17 +3,18 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   const clickedArticle =
-    <div>
-      <div className="articleBody">
-        <div className='flexArticleItems'>
-          <div className='singleArticle'>
-            <img src={props.image} className="articleImgResize"/>
-            <p>{props.title}</p>
-            <p className="CopyLighterColor">{props.description}</p>
-          </div>
+  <div>
+    <h1>HI Article works</h1>
+    <div className="articleBody">
+      <div className='flexArticleItems'>
+        <div className='singleArticle'>
+          <img src={props.image} className="articleImgResize"/>
+          <p>{props.title}</p>
+          <p className="CopyLighterColor">{props.description}</p>
         </div>
       </div>
-      <style jsx>{`
+    </div>
+    <style jsx>{`
       .flexArticleItems {
         height: 100%;
         display: grid;
@@ -45,7 +46,7 @@ function Article(props){
       }
 
     `}</style>
-    </div>;
+  </div>;
   // if (props.currentRouterPath === '') {
   //   return(
   //     <div onClick={() => {alert(hi + props.title); }}>
@@ -53,11 +54,11 @@ function Article(props){
   //     </div>
   //   );
   // } else {
-  // return(
-  //   <div>
-  //     {clickedArticle}
-  //   </div>
-  // );
+  return(
+    <div>
+      {clickedArticle}
+    </div>
+  );
   // }
 }
 

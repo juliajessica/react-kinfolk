@@ -1,7 +1,7 @@
 import React from 'react';
 import Article from './Article';
 
-import articleData from './articleData';
+//import articleData from './articleData';
 import PropTypes from 'prop-types';
 
 
@@ -23,7 +23,6 @@ function ArticleList(props){
 
   return(
     <div>
-      <Article />
       <div className='articleListBody'>
         <div className="currentArticle">
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
@@ -43,7 +42,7 @@ function ArticleList(props){
             )}
           </div>
         </div>
-      </div> //end of articleList
+      </div>
       <style jsx>{`
 
         .articleListBody {
@@ -92,7 +91,8 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  liftedShoppingData: PropTypes.func,
+  liftedShoppingData: PropTypes.array,
+  onSingleArticle: PropTypes.func
 };
 
 export default ArticleList;

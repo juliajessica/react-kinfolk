@@ -6,7 +6,7 @@ import ArticleList from './ArticleList';
 import ShoppingList from './ShoppingList';
 import ShoppingItem from './ShoppingItem';
 import Error404 from './Error404';
-import Admin from './Admin';
+// import Admin from './Admin';
 
 import shoppingItemData from './ShoppingItemData';
 
@@ -39,7 +39,7 @@ class Router extends React.Component {
       <div className="body">
         <Switch>
           <Route exact path='/' render={()=>
-            <ArticleList liftedShoppingData={this.state.shoppingItemData} />} />//lifted state
+            <ArticleList onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.shoppingItemData} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route component={Error404} />
