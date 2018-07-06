@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './Article';
+import ArticleClicked from './ArticleClicked';
 
 //import articleData from './articleData';
 import PropTypes from 'prop-types';
@@ -9,6 +10,10 @@ import PropTypes from 'prop-types';
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
+  let viewArticle = null;
+  if (props.viewSelectedArticle !=null){
+    viewArticle = <>
+  }
   // console.log(props.currentRouterPath);
   // if (this.state.) {
   //
@@ -94,7 +99,8 @@ function ArticleList(props){
 
 ArticleList.propTypes = {
   liftedShoppingData: PropTypes.array,
-  onSingleArticle: PropTypes.func
+  onSingleArticle: PropTypes.func,
+  viewSelectedArticle: PropTypes.string
 };
 
 export default ArticleList;

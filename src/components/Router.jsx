@@ -25,7 +25,7 @@ class Router extends React.Component {
   }
 
   handleSingleArticle(selectedArticle){
-    this.setState({viewSelectedArticle: newArticleListData});
+    this.setState({viewSelectedArticle: selectedArticle});
     alert(this.state.viewSelectedArticle.title);
   }
 
@@ -37,7 +37,9 @@ class Router extends React.Component {
       <div className="body">
         <Switch>
           <Route exact path='/' render={()=>
-            <ArticleList onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.articleListData} />} />//lifted state
+            <ArticleList
+              onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.articleListData}
+              viewSelectedArticle={this.state.viewSelectedArticle} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route component={Error404} />

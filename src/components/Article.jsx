@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   return(
-    <div> onClick={()=> {
-      props.onSingleArticle({title: props.title,
+    <div onClick={() => {props.onSingleArticle({title: props.title,
         image: props.image,
         fullDescription: props.fullDescription});}}>
       <h1>clicked</h1>
