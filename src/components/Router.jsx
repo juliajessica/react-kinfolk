@@ -17,19 +17,20 @@ class Router extends React.Component {
     this.state = {
       shoppingItemData,
       viewSelectedArticle: false
-      // changeAdminRoute: {}
     };
     // this.handleSingleArticle = this.handleSingleArticle.bind(this);
     // console.log(shoppingItemData);
     // console.log(this.state.handleSingleArticle);
   }
-  //
-  // handleSingleArticle(selectedArticle){
-  //   let newShoppingItemData = this.state.shoppingItemData.slice();
-  //
-  //   this.setState({newShoppingItemData: selectedArticle});
-  //   console.log(this.state);
-  // }
+
+  handleSingleArticle(selectedArticle){
+    let newShoppingItemData = this.state.shoppingItemData.slice();
+    console.log(newShoppingItemData);
+    newShoppingItemData.push(selectedArticle);
+    this.setState({shoppingItemData: newShoppingItemData});
+    console.log(shoppingItemData);
+
+  }
 
   // <Route exact path='/' component={ArticleList} />
   //<Route exact path='/' render={()=>
