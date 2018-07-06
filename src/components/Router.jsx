@@ -15,7 +15,8 @@ class Router extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      shoppingItemData
+      shoppingItemData,
+      viewSelectedArticle: false
       // changeAdminRoute: {}
     };
     // this.handleSingleArticle = this.handleSingleArticle.bind(this);
@@ -23,11 +24,12 @@ class Router extends React.Component {
     // console.log(this.state.handleSingleArticle);
   }
   //
-  handleSingleArticle(selectedArticle){
-    let newShoppingItemData = this.state.shoppingItemData.slice();
-    this.setState({newShoppingItemData: selectedArticle});
-    console.log(this.state);
-  }
+  // handleSingleArticle(selectedArticle){
+  //   let newShoppingItemData = this.state.shoppingItemData.slice();
+  //
+  //   this.setState({newShoppingItemData: selectedArticle});
+  //   console.log(this.state);
+  // }
 
   // <Route exact path='/' component={ArticleList} />
   //<Route exact path='/' render={()=>

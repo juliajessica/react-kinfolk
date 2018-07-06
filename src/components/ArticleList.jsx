@@ -1,7 +1,7 @@
 import React from 'react';
 import Article from './Article';
 
-// import articleData from './articleData';
+import articleData from './articleData';
 import PropTypes from 'prop-types';
 
 //images
@@ -9,8 +9,9 @@ import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
   // console.log(props.currentRouterPath);
-  // let selectedArticle = null;
+  if (this.state.) {
 
+  }
 
   return(
     <div>
@@ -21,6 +22,17 @@ function ArticleList(props){
           <p className="titleCurrentArticle">The New Democrats</p>
           <p style={{color: '#4D4D4D', fontSize:'.8rem'}}>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
+
+          <div className='flexArticleList' onClick={props.onSingleArticle}>
+            {articleData.map((article, index) =>
+              <Article
+                title={article.title}
+                description={article.description}
+                image={article.image}
+                fullDescription={article.fullDescription}
+                key={index} />
+            )}
+          </div>
 
 
         </div>
@@ -75,20 +87,9 @@ function ArticleList(props){
 
 ArticleList.propTypes = {
   onSingleArticle: PropTypes.func,
-  currentRouterPath: PropTypes.string
 };
 
 export default ArticleList;
+//  currentRouterPath: PropTypes.string
 
-
-// <div className='flexArticleList' onClick={props.onSingleArticle}>
-//   {props.articleData.map((article, index) =>
-//     <Article
-//       title={article.title}
-//       description={article.description}
-//       image={article.image}
-//       fullDescription={article.fullDescription}
-//       currentRouterPath={props.currentRouterPath}
-//       key={index} />
-  // )}
-// </div>
+// currentRouterPath={props.currentRouterPath}

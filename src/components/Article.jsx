@@ -46,19 +46,19 @@ function Article(props){
 
     `}</style>
     </div>;
-  if (props.currentRouterPath === '') {
-    return(
-      <div onClick={() => {alert(hi + props.title); }}>
-        {clickedArticle}
-      </div>
-    );
-  } else {
-    return(
-      <div>
-        {clickedArticle}
-      </div>
-    );
-  }
+  // if (props.currentRouterPath === '') {
+  //   return(
+  //     <div onClick={() => {alert(hi + props.title); }}>
+  //       {clickedArticle}
+  //     </div>
+  //   );
+  // } else {
+  return(
+    <div>
+      {clickedArticle}
+    </div>
+  );
+  // }
 }
 
 Article.propTypes = {
