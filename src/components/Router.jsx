@@ -15,8 +15,8 @@ class Router extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      articleListData,
-      viewSelectedArticle: null
+      viewSelectedArticle: null,
+      articleListData
     };
     this.handleSingleArticle = this.handleSingleArticle.bind(this);
     // console.log(shoppingItemData);
@@ -25,7 +25,7 @@ class Router extends React.Component {
 
   handleSingleArticle(selectedArticle){
     this.setState({viewSelectedArticle: selectedArticle});
-    alert(this.state.viewSelectedArticle.title);
+    // alert(this.state.viewSelectedArticle.title);
   }
 
   // <Route exact path='/' component={ArticleList} />
@@ -37,7 +37,8 @@ class Router extends React.Component {
         <Switch>
           <Route exact path='/' render={()=>
             <ArticleList
-              onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.articleListData}
+              onSingleArticle={this.handleSingleArticle}
+              liftedShoppingData={this.state.articleListData}
               viewSelectedArticle={this.state.viewSelectedArticle} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />

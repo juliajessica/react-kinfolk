@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
-  // let viewArticle = null;
-  // if (props.viewSelectedArticle !=null){
-  //   viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
-  // }
+  let viewArticle = null;
+  if (props.viewSelectedArticle !=null){
+    viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
+  }
   return(
     <div>
       <div className='articleListBody'>
@@ -83,8 +83,8 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  liftedShoppingData: PropTypes.array,
-  onSingleArticle: PropTypes.func,
+  liftedShoppingData: PropTypes.array.isRequired,
+  onSingleArticle: PropTypes.func.isRequired,
   viewSelectedArticle: PropTypes.string
 };
 
