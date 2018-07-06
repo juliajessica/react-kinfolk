@@ -8,15 +8,16 @@ import ShoppingItem from './ShoppingItem';
 import Error404 from './Error404';
 // import Admin from './Admin';
 
-import shoppingItemData from './ShoppingItemData';
+//import shoppingItemData from './ShoppingItemData';
+import articleListData from './ArticleData';
 
 
 class Router extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      shoppingItemData,
-      viewSelectedArticle: false
+      articleListData,
+      viewSelectedArticle: null
     };
     this.handleSingleArticle = this.handleSingleArticle.bind(this);
     // console.log(shoppingItemData);
@@ -24,11 +25,11 @@ class Router extends React.Component {
   }
 
   handleSingleArticle(selectedArticle){
-    let newShoppingItemData = this.state.shoppingItemData.slice();
-    console.log(newShoppingItemData);
+    let newArticleListData = this.state.articleListData.slice();
+    console.log(newArticleListData);
     newShoppingItemData.push(selectedArticle);
-    this.setState({shoppingItemData: newShoppingItemData});
-    console.log(shoppingItemData);
+    this.setState({articleListData: newArticleListData});
+    console.log(articleListData);
   }
 
   // <Route exact path='/' component={ArticleList} />
@@ -39,7 +40,7 @@ class Router extends React.Component {
       <div className="body">
         <Switch>
           <Route exact path='/' render={()=>
-            <ArticleList onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.shoppingItemData} />} />//lifted state
+            <ArticleList onSingleArticle={this.handleSingleArticle} liftedShoppingData={this.state.articleListData} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route component={Error404} />
