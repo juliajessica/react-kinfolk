@@ -7,7 +7,6 @@ import ShoppingList from './ShoppingList';
 import ShoppingItem from './ShoppingItem';
 import Error404 from './Error404';
 // import Admin from './Admin';
-
 //import shoppingItemData from './ShoppingItemData';
 import articleListData from './ArticleData';
 
