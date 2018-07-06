@@ -12,6 +12,14 @@ function ArticleList(props){
   // if (this.state.) {
   //
   // }
+  // displayArticle(view){
+  // // let newShoppingItemData = this.state.shoppingItemData.slice();
+  // // for (let i=0; i <= newShoppingItemData.length; i++){
+  // for (let i=0; i <= view.length; i++){
+  //   // <Article newShoppingItemData[i] />
+  //   if ()
+  // }
+
   return(
     <div>
       <div className='articleListBody'>
@@ -23,7 +31,7 @@ function ArticleList(props){
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
 
           <div className='flexArticleList' onClick={props.onSingleArticle}>
-            {articleData.map((article, index) =>
+            {props.liftedShoppingData.map((article, index) =>
               <Article
                 title={article.title}
                 description={article.description}

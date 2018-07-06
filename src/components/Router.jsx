@@ -28,7 +28,7 @@ class Router extends React.Component {
     console.log(newShoppingItemData);
     newShoppingItemData.push(selectedArticle);
     this.setState({shoppingItemData: newShoppingItemData});
-    console.log(shoppingItemData);
+    console.log(shoppingItemData);    
   }
 
   // <Route exact path='/' component={ArticleList} />
@@ -60,10 +60,3 @@ class Router extends React.Component {
 }
 
 export default Router;
-
-
-// let newShoppingItemData = this.state.shoppingItemData.slice();
-// for (let i=0; i <= newShoppingItemData.length; i++){
-//   <Article newShoppingItemData[i] />
-// }
-//

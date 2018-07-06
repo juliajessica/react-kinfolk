@@ -18,6 +18,7 @@
     "react-router-dom": "^4.0.0",
     "styled-jsx": "^2.2.7",
     "url-loader": "^0.6.2",
+    "uuid": "^3.2.1",
     "webpack-css-loaders": "^1.0.0"
   },
   "devDependencies": {
