@@ -23,6 +23,7 @@ function ArticleList(props){
 
   return(
     <div>
+      <Article />
       <div className='articleListBody'>
         <div className="currentArticle">
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
@@ -41,11 +42,8 @@ function ArticleList(props){
                 key={index} />
             )}
           </div>
-
-
         </div>
-
-      </div>
+      </div> //end of articleList
       <style jsx>{`
 
         .articleListBody {

@@ -53,11 +53,11 @@ function Article(props){
   //     </div>
   //   );
   // } else {
-  return(
-    <div>
-      {clickedArticle}
-    </div>
-  );
+  // return(
+  //   <div>
+  //     {clickedArticle}
+  //   </div>
+  // );
   // }
 }
 
