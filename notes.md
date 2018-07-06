@@ -6,7 +6,6 @@
   * logo - goes back to homepage
    * static on every page
    * banner image
-   * logo
 
 ## 2. Router - State
 

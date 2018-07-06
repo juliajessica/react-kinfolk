@@ -11,6 +11,12 @@
 
 _I previously made a clone of Kinfolk in <a href="√" title="Julia Sheremet Web Designs">Angular</a> and this time around I cloned their website using the React/Redux libraries._
 
+
+## <span style="color:#74875d;">Description</span>
+| Kinfolk Component Tree Sketch |
+| :--------|
+![Component Tree Mockup](./assets/img/componentTree.jpeg)
+
 ### Link to live application:
 https://
 
