@@ -1,31 +1,16 @@
 import React from 'react';
 import Article from './Article';
 import ArticleClicked from './ArticleClicked';
-
 //import articleData from './articleData';
 import PropTypes from 'prop-types';
-
-
 //images
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
   let viewArticle = null;
   if (props.viewSelectedArticle !=null){
-    viewArticle = <>
+    viewArticle = <ArticleClicked tickedToView={props.liftedShoppingData[props.viewSelectedArticle]}/>;
   }
-  // console.log(props.currentRouterPath);
-  // if (this.state.) {
-  //
-  // }
-  // displayArticle(view){
-  // // let newShoppingItemData = this.state.shoppingItemData.slice();
-  // // for (let i=0; i <= newShoppingItemData.length; i++){
-  // for (let i=0; i <= view.length; i++){
-  //   // <Article newShoppingItemData[i] />
-  //   if ()
-  // }
-
   return(
     <div>
       <div className='articleListBody'>
@@ -104,3 +89,15 @@ ArticleList.propTypes = {
 };
 
 export default ArticleList;
+
+// console.log(props.currentRouterPath);
+// if (this.state.) {
+//
+// }
+// displayArticle(view){
+// // let newShoppingItemData = this.state.shoppingItemData.slice();
+// // for (let i=0; i <= newShoppingItemData.length; i++){
+// for (let i=0; i <= view.length; i++){
+//   // <Article newShoppingItemData[i] />
+//   if ()
+// }
