@@ -1,7 +1,7 @@
 import React from 'react';
 import Article from './Article';
 
-import articleData from './articleData';
+// import articleData from './articleData';
 import PropTypes from 'prop-types';
 
 //images
@@ -24,17 +24,7 @@ function ArticleList(props){
 
 
         </div>
-        <div className='flexArticleList' onClick={props.onSingleArticle}>
-          {props.articleData.map((article, index) =>
-            <Article
-              title={article.title}
-              description={article.description}
-              image={article.image}
-              fullDescription={article.fullDescription}
-              currentRouterPath={props.currentRouterPath}
-              key={index} />
-          )}
-        </div>
+
       </div>
       <style jsx>{`
 
@@ -89,3 +79,16 @@ ArticleList.propTypes = {
 };
 
 export default ArticleList;
+
+
+// <div className='flexArticleList' onClick={props.onSingleArticle}>
+//   {props.articleData.map((article, index) =>
+//     <Article
+//       title={article.title}
+//       description={article.description}
+//       image={article.image}
+//       fullDescription={article.fullDescription}
+//       currentRouterPath={props.currentRouterPath}
+//       key={index} />
+  // )}
+// </div>
