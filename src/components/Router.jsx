@@ -36,8 +36,8 @@ class Router extends React.Component {
     return(
       <div className="body">
         <Switch>
-          <Route exact path='/' render={()=>
-            <ArticleList liftedShoppingData={this.state.shoppingItemData} />} />//lifted state
+          <Route exact path='/' render={(props)=>
+            <ArticleList liftedShoppingData={this.state.shoppingItemData} currentRouterPath={props.location.pathname} />} />//lifted state
           <Route path='/shoppingList' component={ShoppingList} />
           <Route path='/shoppingItem' component={ShoppingItem} />
           <Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>

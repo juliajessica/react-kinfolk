@@ -8,7 +8,9 @@ import PropTypes from 'prop-types';
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
-  let selectedArticle = null;
+  // console.log(props.currentRouterPath);
+  // let selectedArticle = null;
+
 
   return(
     <div>
@@ -23,12 +25,13 @@ function ArticleList(props){
 
         </div>
         <div className='flexArticleList' onClick={props.onSingleArticle}>
-          {articleData.map((article, index) =>
+          {props.articleData.map((article, index) =>
             <Article
               title={article.title}
               description={article.description}
               image={article.image}
               fullDescription={article.fullDescription}
+              currentRouterPath={props.currentRouterPath}
               key={index} />
           )}
         </div>
@@ -81,7 +84,8 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  onSingleArticle: PropTypes.func
+  onSingleArticle: PropTypes.func,
+  currentRouterPath: PropTypes.string
 };
 
 export default ArticleList;
