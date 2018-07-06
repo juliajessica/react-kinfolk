@@ -13,9 +13,9 @@ _I previously made a clone of Kinfolk in <a href="√" title="Julia Sheremet Web
 
 
 ## <span style="color:#74875d;">Description</span>
-| Kinfolk Component Tree Sketch |
-| :--------|
- | ![Component Tree Mockup](https://github.com/juliajessica/react-kinfolk/blob/master/src/assets/img/componentTree.jpeg?raw=true) |
+| Kinfolk Component Tree Sketch | Stateful Component Tree |
+| :--------| :--------- |
+ | ![Component Tree Mockup](https://github.com/juliajessica/react-kinfolk/blob/master/src/assets/img/componentTree.jpeg?raw=true) | ![StatefulComponent Tree](https://github.com/juliajessica/react-kinfolk/blob/master/src/assets/img/StatefulTree.jpeg?raw=true) | 
 
 ### Link to live application:
 https://
