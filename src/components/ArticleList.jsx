@@ -9,10 +9,9 @@ import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
   // console.log(props.currentRouterPath);
-  if (this.state.) {
-
-  }
-
+  // if (this.state.) {
+  //
+  // }
   return(
     <div>
       <div className='articleListBody'>
