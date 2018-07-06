@@ -9,7 +9,7 @@ import art1 from '../assets/img/art1.jpg';
 function ArticleList(props){
   let viewArticle = null;
   if (props.viewSelectedArticle !=null){
-    viewArticle = <ArticleClicked tickedToView={props.liftedShoppingData[props.viewSelectedArticle]}/>;
+    viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
   }
   return(
     <div>

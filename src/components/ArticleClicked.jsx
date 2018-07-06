@@ -5,22 +5,22 @@ function ArticleClicked(props){
   return (
     <div>
       <hr/>
-        <div className="articleBody">
-          <div className='flexArticleItems'>
-            <div className='singleArticle'>
-              <img src={props.image} className="articleImgResize"/>
-              <p>{props.title}</p>
-              <p className="CopyLighterColor">{props.description}</p>
-            </div>
+      <div className="articleBody">
+        <div className='flexArticleItems'>
+          <div className='singleArticle'>
+            <img src={props.viewSelectedArticle.image} className="articleImgResize"/>
+            <p>{props.viewSelectedArticle.title}</p>
+            <p className="CopyLighterColor">{props.viewSelectedArticle.fullDescription}</p>
           </div>
+        </div>
       </div>
       <hr/>
     </div>
   );
 }
 
-TicketDetail.propTypes = {
-  selectedTicket: PropTypes.object
+ArticleClicked.propTypes = {
+  viewSelectedArticle: PropTypes.object
 };
 
-export default TicketDetail;
+export default ArticleClicked;
