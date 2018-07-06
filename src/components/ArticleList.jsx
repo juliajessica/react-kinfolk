@@ -85,7 +85,7 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  onSingleArticle: PropTypes.func,
+  liftedShoppingData: PropTypes.func,
 };
 
 export default ArticleList;
