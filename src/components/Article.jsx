@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Article(props){
   //{props.onSingleArticle({title: props.title, image: props.image, fullDescription: props.fullDescription});}}>
   return(
-    <div onClick={() =>
+    <div onClick={props.onSingleArticle}>
       <h1>clicked</h1>
       <div className="articleBody">
         <div className='flexArticleItems'>

@@ -25,6 +25,8 @@ class Router extends React.Component {
 
   handleSingleArticle(selectedArticle){
     this.setState({viewSelectedArticle: selectedArticle});
+    console.log(selectedArticle);
+    console.log(viewSelectedArticle);
     // alert(this.state.viewSelectedArticle.title);
   }
 
