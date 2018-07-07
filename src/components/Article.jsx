@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Article(props){
-  //{props.onSingleArticle({title: props.title, image: props.image, fullDescription: props.fullDescription});}}>
   return(
     <div onClick={props.onSingleArticle}>
       <h1>clicked</h1>

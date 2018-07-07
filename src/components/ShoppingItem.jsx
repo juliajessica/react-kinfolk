@@ -60,8 +60,6 @@ function ShoppingItem(props){
         }
 
 
-
-
       `}</style>
     </div>
 

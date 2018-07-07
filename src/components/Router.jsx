@@ -25,14 +25,10 @@ class Router extends React.Component {
 
   handleSingleArticle(selectedArticle){
     this.setState({viewSelectedArticle: selectedArticle});
-    console.log(selectedArticle);
-    console.log(viewSelectedArticle);
-    // alert(this.state.viewSelectedArticle.title);
+    // console.log(selectedArticle);
+    // console.log(viewSelectedArticle);
   }
 
-  // <Route exact path='/' component={ArticleList} />
-  //<Route exact path='/' render={()=>
-  //   <ArticleList onSingleArticle={this.handleSingleArticle} />} />//lifted state
   render(){
     return(
       <div className="body">
@@ -62,4 +58,4 @@ class Router extends React.Component {
 
 export default Router;
 
-//          <Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>
+//<Route path='/admin' render={(props)=><Admin shoppingListState={this.state.shoppingItemData} currentRouterPath={props.location.pathname}/> }/>
