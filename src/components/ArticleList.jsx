@@ -10,8 +10,9 @@ function ArticleList(props){
   console.log(props.liftedShoppingData);
   let viewArticle = null;
   if (props.viewSelectedArticle !=null){
-    console.log(props.viewSelectedArticle);
+
     viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
+    console.log(props.viewSelectedArticle);
   }
   return(
     <div>
@@ -25,13 +26,13 @@ function ArticleList(props){
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
 
           <div className='flexArticleList'>
-            {props.liftedShoppingData.map((article) =>
+            {props.liftedShoppingData.map((article, index) =>
               <Article
                 title={article.title}
                 description={article.description}
                 image={article.image}
                 fullDescription={article.fullDescription}
-                key={article.id}
+                key={index}
                 onSingleArticle={props.onSingleArticle} />
             )}
           </div>
@@ -88,7 +89,7 @@ function ArticleList(props){
 ArticleList.propTypes = {
   liftedShoppingData: PropTypes.array,
   onSingleArticle: PropTypes.func.isRequired,
-  viewSelectedArticle: PropTypes.object
+  viewSelectedArticle: PropTypes.string
 };
 
 export default ArticleList;

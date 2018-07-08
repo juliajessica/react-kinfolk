@@ -56,7 +56,6 @@ Article.propTypes = {
   description: PropTypes.string,
   fullDescription: PropTypes.string,
   onSingleArticle: PropTypes.func,
-  ticketId: PropTypes.string.isRequired
 };
 
 export default Article;
