@@ -5,6 +5,7 @@ function ArticleClicked(props){
   return (
     <div>
       <hr/>
+      <h1>article info</h1>
       <div className="articleBody">
         <div className='flexArticleItems'>
           <div className='singleArticle'>

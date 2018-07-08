@@ -15,17 +15,18 @@ class Router extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      viewSelectedArticle: null,
-      articleListData
+      articleListData,
+      viewSelectedArticle: null
     };
     this.handleSingleArticle = this.handleSingleArticle.bind(this);
-    // console.log(shoppingItemData);
+    console.log(this.state.handleSingleArticle);
     // console.log(this.state.handleSingleArticle);
   }
 
-  handleSingleArticle(selectedArticle){
-    this.setState({viewSelectedArticle: selectedArticle});
-    // console.log(selectedArticle);
+  handleSingleArticle(article){
+    this.setState({viewSelectedArticle: article});
+    alert('This is the article that you want to see' + this.state.viewSelectedArticle.title);
+    console.log(this.state.viewSelectedArticle.title);
     // console.log(viewSelectedArticle);
   }
 
