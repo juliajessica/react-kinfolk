@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
-  console.log(props.liftedShoppingData);
   let viewArticle = null;
   if (props.viewSelectedArticle !=null){
 
@@ -18,7 +17,10 @@ function ArticleList(props){
     <div>
       <div className='articleListBody'>
         <div className="currentArticle">
-          {viewArticle}
+          <div>
+            <h1>view article</h1>
+            {viewArticle}
+          </div>
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
           <p className="underlineRed">ARTS & CULTURE, ISSUE 28</p>
           <p className="titleCurrentArticle">The New Democrats</p>
@@ -26,15 +28,17 @@ function ArticleList(props){
           <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
 
           <div className='flexArticleList'>
-            {props.liftedShoppingData.map((article, index) =>
-              <Article
+            {Object.keys(props.liftedShoppingData).map(function(articleId){
+              let article = props.liftedShoppingData[articleId];
+              return <Article
                 title={article.title}
                 description={article.description}
                 image={article.image}
                 fullDescription={article.fullDescription}
-                key={index}
-                onSingleArticle={props.onSingleArticle} />
-            )}
+                key={articleId}
+                id={articleId}
+                onSingleArticle={props.onSingleArticle} />;
+            })}
           </div>
         </div>
       </div>
@@ -88,8 +92,8 @@ function ArticleList(props){
 
 ArticleList.propTypes = {
   liftedShoppingData: PropTypes.array,
-  onSingleArticle: PropTypes.func.isRequired,
-  viewSelectedArticle: PropTypes.string
+  onSingleArticle: PropTypes.func,
+  viewSelectedArticle: PropTypes.object
 };
 
 export default ArticleList;

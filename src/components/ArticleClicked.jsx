@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+//<img src={props.viewSelectedArticle.image} className="articleImgResize"/>
 function ArticleClicked(props){
   return (
     <div>
@@ -9,7 +9,7 @@ function ArticleClicked(props){
       <div className="articleBody">
         <div className='flexArticleItems'>
           <div className='singleArticle'>
-            <img src={props.viewSelectedArticle.image} className="articleImgResize"/>
+
             <p>{props.viewSelectedArticle.title}</p>
             <p className="CopyLighterColor">{props.viewSelectedArticle.fullDescription}</p>
           </div>

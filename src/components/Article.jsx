@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   return(
-    <div onClick={props.onSingleArticle}>
-      <h1>clicked</h1>
+    <div onClick={()=> {props.onSingleArticle(props.articleId);}}>
       <div className="articleBody">
         <div className='flexArticleItems'>
           <div className='singleArticle'>
@@ -54,8 +53,9 @@ Article.propTypes = {
   title: PropTypes.string,
   image: PropTypes.string,
   description: PropTypes.string,
+  articleId: PropTypes.string,
   fullDescription: PropTypes.string,
-  onSingleArticle: PropTypes.func,
+  onSingleArticle: PropTypes.func
 };
 
 export default Article;
