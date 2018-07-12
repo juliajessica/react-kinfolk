@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Article(props){
   return(
-    <div onClick={()=> {props.onSingleArticle(props.articleId);}}>
+    <div onClick={()=> {props.onSingleArticle(props.id);}}>
       <div className="articleBody">
         <div className='flexArticleItems'>
           <div className='singleArticle'>
@@ -53,7 +53,7 @@ Article.propTypes = {
   title: PropTypes.string,
   image: PropTypes.string,
   description: PropTypes.string,
-  articleId: PropTypes.string,
+  articleId: PropTypes.number,
   fullDescription: PropTypes.string,
   onSingleArticle: PropTypes.func
 };

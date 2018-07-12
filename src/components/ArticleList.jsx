@@ -11,7 +11,6 @@ function ArticleList(props){
   if (props.viewSelectedArticle !=null){
 
     viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
-    console.log(props.viewSelectedArticle);
   }
   return(
     <div>
@@ -29,7 +28,9 @@ function ArticleList(props){
 
           <div className='flexArticleList'>
             {Object.keys(props.liftedShoppingData).map(function(articleId){
+              // console.log("this is article list " + articleId);
               let article = props.liftedShoppingData[articleId];
+              // console.log(article);
               return <Article
                 title={article.title}
                 description={article.description}
@@ -91,9 +92,9 @@ function ArticleList(props){
 }
 
 ArticleList.propTypes = {
-  liftedShoppingData: PropTypes.array,
+  liftedShoppingData: PropTypes.object,
   onSingleArticle: PropTypes.func,
-  viewSelectedArticle: PropTypes.object
+  viewSelectedArticle: PropTypes.string
 };
 
 export default ArticleList;

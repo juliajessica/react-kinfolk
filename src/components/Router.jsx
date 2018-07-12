@@ -20,17 +20,10 @@ class Router extends React.Component {
     };
     this.handleSingleArticle = this.handleSingleArticle.bind(this);
     console.log(this.handleSingleArticle);
-    // console.log(this.state.handleSingleArticle);
   }
 
   handleSingleArticle(articleId){
-    //let newArticleListData = this.state.articleListData.slice();
-    //newArticleListData.pop(article);
-    console.log(articleId);
     this.setState({viewSelectedArticle: articleId});
-    // console.log(article[i]);
-    alert('This is the article that you want to see' + viewSelectedArticle);
-
   }
 
   render(){
