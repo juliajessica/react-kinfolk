@@ -7,9 +7,12 @@
 <a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square"></a>
 </p>
 
+## <span style="color:#74875d;">Link to live site:</span>
+https://juliajessica.github.io/react-kinfolk/#/
+
 ## <span style="color:#74875d;">Description</span>
 
-_I previously made a clone of Kinfolk in <a href="√" title="Julia Sheremet Web Designs">Angular</a> and this time around I cloned their website using the React/Redux libraries._
+_I previously made a clone of Kinfolk in <a href="√" title="Julia Sheremet Web Designs">Angular</a> and this time around I cloned their website using the React/Redux libraries.
 
 
 ## <span style="color:#74875d;">Description</span>
