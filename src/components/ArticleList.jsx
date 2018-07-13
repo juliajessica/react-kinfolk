@@ -1,30 +1,29 @@
 import React from 'react';
 import Article from './Article';
 import ArticleClicked from './ArticleClicked';
-//import articleData from './articleData';
 import PropTypes from 'prop-types';
 //images
 import art1 from '../assets/img/art1.jpg';
 
 function ArticleList(props){
   let viewArticle = null;
-  if (props.viewSelectedArticle !=null){
 
+  if (props.viewSelectedArticle !=null){
     viewArticle = <ArticleClicked viewSelectedArticle={props.liftedShoppingData[props.viewSelectedArticle]}/>;
   }
   return(
     <div>
       <div className='articleListBody'>
+        <div className="SingleArticleClicked">
+          {viewArticle}
+        </div>
+
         <div className="currentArticle">
-          <div>
-            <h1>view article</h1>
-            {viewArticle}
-          </div>
           <img src={art1} title="The New Democrats" className="currentArticleImg"/>
           <p className="underlineRed">ARTS & CULTURE, ISSUE 28</p>
           <p className="titleCurrentArticle">The New Democrats</p>
           <p style={{color: '#4D4D4D', fontSize:'.8rem'}}>In Canada, brothers Jagmeet and Gurratan Singh are redressing the stereotype of “image-conscious” politicians.</p>
-          <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>READ MORE</p>
+          <p style={{color: '#4D4D4D', fontSize:'.4rem', padding:'1rem'}}>A GOOD READ</p>
 
           <div className='flexArticleList'>
             {Object.keys(props.liftedShoppingData).map(function(articleId){
@@ -42,8 +41,8 @@ function ArticleList(props){
             })}
           </div>
         </div>
+
       </div>
-      <Article />
       <style jsx>{`
 
         .articleListBody {
@@ -98,15 +97,3 @@ ArticleList.propTypes = {
 };
 
 export default ArticleList;
-
-// console.log(props.currentRouterPath);
-// if (this.state.) {
-//
-// }
-// displayArticle(view){
-// // let newShoppingItemData = this.state.shoppingItemData.slice();
-// // for (let i=0; i <= newShoppingItemData.length; i++){
-// for (let i=0; i <= view.length; i++){
-//   // <Article newShoppingItemData[i] />
-//   if ()
-// }

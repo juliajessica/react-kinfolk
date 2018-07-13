@@ -8,7 +8,7 @@ function Article(props){
         <div className='flexArticleItems'>
           <div className='singleArticle'>
             <img src={props.image} className="articleImgResize"/>
-            <p>{props.title}</p>
+            <p className="articleTitle">{props.title}</p>
             <p className="CopyLighterColor">{props.description}</p>
           </div>
         </div>
@@ -17,11 +17,11 @@ function Article(props){
         .flexArticleItems {
           height: 100%;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
           gird-gap: 2rem;
           grid-auto-flow: dense;
         }
-        .singleArticle{
+        .singleArticle {
           align-self: center;
           justify-self: center;
         }
@@ -31,9 +31,17 @@ function Article(props){
           width: 100%;
           height:auto;
           margin:auto;
+          cursor: pointer;
         }
+
         .CopyLighterColor {
           color: #4D4D4D;
+        }
+
+        .articleTitle {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          font-weight: bold;
         }
 
         * {
@@ -53,24 +61,9 @@ Article.propTypes = {
   title: PropTypes.string,
   image: PropTypes.string,
   description: PropTypes.string,
-  articleId: PropTypes.number,
+  id: PropTypes.number,
   fullDescription: PropTypes.string,
   onSingleArticle: PropTypes.func
 };
 
 export default Article;
-
-
-// if (props.currentRouterPath === '') {
-//   return(
-//     <div onClick={() => {alert(hi + props.title); }}>
-//       {clickedArticle}
-//     </div>
-//   );
-// } else {
-// return(
-//   <div>
-//     {clickedArticle}
-//   </div>
-// );
-// }
